@@ -4,3 +4,9 @@ labextension:
     class: 'LocalCluster'
     args: []
     kwargs: {}
+  default:
+    workers: null
+    adapt:
+      null
+  initial:
+    []
