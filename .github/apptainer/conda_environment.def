@@ -3,7 +3,8 @@ Bootstrap: docker
 From: condaforge/miniforge3 
 
 %files
-    .github/apptainer/config/distributed.yml /etc/dask/distributed.yml
+    .github/apptainer/config/dask/distributed.yml /etc/dask/distributed.yml
+    .github/apptainer/config/dask/labextension.yml /etc/dask/labextension.yml
     .github/apptainer/environment_default.yml
     environment.yml
 
