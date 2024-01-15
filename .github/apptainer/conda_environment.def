@@ -3,13 +3,8 @@ Bootstrap: docker
 From: condaforge/miniforge3 
 
 %files
-    .github/apptainer/config/dask/distributed.yml /etc/dask/distributed.yml
-    .github/apptainer/config/dask/labextension.yml /etc/dask/labextension.yml
     .github/apptainer/environment_default.yml
     environment.yml
-
-%environment
-    export DASK_CONFIG=/etc/dask
 
 %post
     ENV_NAME=$(head -1 environment.yml | cut -d' ' -f2)
