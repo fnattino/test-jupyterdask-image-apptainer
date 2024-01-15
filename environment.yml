@@ -3,3 +3,12 @@ channels:
  - conda-forge
 dependencies:
   - python=3.11
+  - fsspec
+  - h5netcdf
+  - matplotlib
+  - xarray
+  - zarr
+  - pip
+  - pip:
+    - dcachefs
+    - git+https://github.com/fnattino/dask-jobqueue.git@default-python
